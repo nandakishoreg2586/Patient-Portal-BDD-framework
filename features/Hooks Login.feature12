@@ -1,0 +1,7 @@
+Feature: PP Login with Hooks
+
+
+Scenario: PP Login with valild data with Hooks
+    Given user enters username and password
+    Then user click on login button
+    And user is navigated to dashboard 

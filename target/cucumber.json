@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "PP Login with valild data",
+        "description": "",
+        "id": "pp-request-phr;pp-login-with-valild-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7798604004,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is in login page",
+            "match": {
+              "location": "LoginStepDefi.user_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9869395,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "title of login page is Log into Patient Portal",
+            "match": {
+              "location": "LoginStepDefi.title_of_login_page_is_Log_into_Patient_Portal()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 239603890,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters username and password from datatable",
+            "match": {
+              "location": "LoginStepDefi.user_enters_username_and_password_from_datatable(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Nkjune@1",
+                  "Nkjune@1"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4369328195,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "LoginStepDefi.user_click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5150955,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is navigated to dashboard",
+            "match": {
+              "location": "LoginStepDefi.user_is_navigated_to_dashboard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30547989,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#ctl00_ucHeader_lnkMyChartMenuIte\"}\n  (Session info: chrome\u003d75.0.3770.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NGBLR-00514\u0027, ip: \u002710.145.13.163\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_162\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\\Users\\Nkishore\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:51586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c9aca2d1c70329ecc722c91612285694\n*** Element info: {Using\u003did, value\u003dctl00_ucHeader_lnkMyChartMenuIte}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefinition.LoginStepDefi.user_click_on_Request_PHR_Link(LoginStepDefi.java:94)\r\n\tat ✽.Then user click on Request PHR Link(Request PHR.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user click on Request PHR Link",
+            "match": {
+              "location": "LoginStepDefi.user_click_on_Request_PHR_Link()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@test0"
+          }
+        ]
+      }
+    ],
+    "name": "PP request PHR",
+    "description": "",
+    "id": "pp-request-phr",
+    "keyword": "Feature",
+    "uri": "Request PHR.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Feature-1"
+      }
+    ]
+  }
+]
